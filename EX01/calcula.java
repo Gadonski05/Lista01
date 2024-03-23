@@ -1,14 +1,34 @@
 public class calcula {
 
-    public static void main(String[] args) {
+        public static float calculadora(int operacao, float num1, float num2){
+            float resultado = 0;
 
-        System.out.println("-----------------");
-        System.out.println("1 -----SOMA------");
-        System.out.println("2 --SUBTRAÇÃO----");
-        System.out.println("3 -MULTIPLICAÇÃO-");
-        System.out.println("4 ----DIVISÃO----");
+            switch (operacao) {
+
+                case 1:
+                resultado = soma(num1, num2);
+                break;
+
+                case 2:
+                resultado = soma(num1, num2);
+                break;
+
+                case 3:
+                resultado = soma(num1, num2);
+                break;
+
+                case 4:
+                resultado = soma(num1, num2);
+                break;
+            
+                default:
+                    break;
+            }
+
+            return resultado;
+        }
         
-        public static Float soma(float num1, float num2){
+        public static float soma(float num1, float num2){
 
             return num1 + num2;
         }
@@ -28,6 +48,7 @@ public class calcula {
             if (num2 == 0) {
 
                 System.out.println("Divisão incorreta!!");
+                return 0;
 
             }else{
                 
@@ -36,4 +57,3 @@ public class calcula {
         }
 
     }
-}
