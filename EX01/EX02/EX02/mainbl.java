@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-
 public class mainbl {
+   
     public static void main(String[] args) {
         
-        biblioteca = new biblioteca();
-        Scanner Scanner = new Scanner(System.in);
+        biblioteca biblioteca = new biblioteca();
+        String Scanner = new Scanner(System.in);
 
         System.out.println();
 
@@ -18,7 +17,9 @@ public class mainbl {
         System.out.println("2 --- Mostrar livros --");
         System.out.println("3 --- Sair ------------");
         System.out.println("Escolha uma opção: ");
-        opcao = Scanner.nextLine();
+
+        opcao = Scanner.nextInt();
+        Scanner = Scanner.nextLine();
 
         // Sequencia caso o usuário escolha alguma opção
         switch (opcao) {
@@ -34,8 +35,8 @@ public class mainbl {
 
                 break;
 
-            case 2:
-                biblioteca.Mostrar();
+            case 2: 
+            biblioteca.mostralivro();
 
                 break;
 
@@ -48,6 +49,7 @@ public class mainbl {
                 System.out.println("Erro");
                 
         }
+        
 
         class Livro {
 
@@ -56,6 +58,10 @@ public class mainbl {
             int ano;
 
             public Livro(String nome, String autor, int ano){
+
+                String nomeLivro;
+                String autorLivro;
+                int anoPublic;
 
                 nome = nomeLivro;
                 autor = autorLivro;
