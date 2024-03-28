@@ -16,5 +16,11 @@ class Produto{
     public void Estoque(int qtd){
         this.qtd += qtd;
     }
-    
+
+    public void Infos(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Código: " + codigo);
+        System.out.println("Quantidade em estoque: " + qtd);
+        System.out.println("Preço: " + preco);
+    }
 }
