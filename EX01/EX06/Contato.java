@@ -26,5 +26,15 @@ class Agenda {
         this.contatos = new ArrayList<>();
     }
 
-    public void adcContato(Contato contato)
+    public void adcContato(Contato contato){
+        contatos.add(contato);
+    }
+
+    public Contato buscaContato(String nome){
+        for(Contato contato: contatos);
+        if (contatos.getNome().equalsIgnoreCase(nome)) {
+            return contatos;
+        }
+        return null;
+    }
 }
