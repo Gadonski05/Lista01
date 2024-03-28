@@ -50,4 +50,12 @@ class Pedido{
         }
         return total;
     }
+
+    public List<Pizza> getPizzas() {
+        return pizzas;
+    }
+
+    public void getPizzas(List<Pizza> pizzas) {
+        this.pizzas = pizzas;
+    }
 }
