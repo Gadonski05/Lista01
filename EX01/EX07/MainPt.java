@@ -11,6 +11,10 @@ public class MainPt {
         produto01.Infos();
         produto02.Infos();
 
-    
+        produto01.Estoque(5);
+        produto02.Estoque(10);
+
+        produto01.Infos();
+        produto02.Infos();
     }
 }
