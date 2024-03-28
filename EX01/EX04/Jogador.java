@@ -19,4 +19,10 @@ public class Jogador {
     public void aumentaLv(){
         lv++;
     }
+    // Exibe todas as informações do player
+    public void mostraInfo(){
+        System.out.println("Nome do player: " + nome);
+        System.out.println("Pontos: " + pontos);
+        System.out.println("Level: " + lv);
+    }
 }
