@@ -23,7 +23,26 @@ public class conta{
         }
     }
     public void sacar(float val){
+        if( val > 0 && val <= saldo){
+            saldo -= val;
+            System.out.println("Você sacou:" + val);
 
+        }else{
+            System.out.println("Saque falhou!!");
+     }
 
+}
+    //Parte do controle das contas
+     //No caso do retorno dasinformações
+    public float getSaldo(){
+            return saldo;
+    }
+
+    public int getConta(){
+        return conta;
+    }
+
+    public String getNome(){
+        return nome;
     }
 }
