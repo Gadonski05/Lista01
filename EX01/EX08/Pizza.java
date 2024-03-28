@@ -15,7 +15,7 @@ class Pizza{
     }
 
     public String getNome(){
-        this.nome;
+        this.nome = nome;
 
     }
 
@@ -24,5 +24,11 @@ class Pizza{
 
     }
 
-    public List
+    public List<String> getComp(){
+        this.comp = comp;
+    }
+}
+
+class pedido{
+    
 }
