@@ -7,11 +7,20 @@ public class MainContato {
     
 
     agenda.adcContato(new Contato("Matheus", "123456789"));
-    agenda.adcContato(new Contato("Matheus", "123456789"));
-    agenda.adcContato(new Contato("Matheus", "123456789"));
+    agenda.adcContato(new Contato("Mat", "143456789"));
+    agenda.adcContato(new Contato("Marte", "423456789"));
 
     String nomeBusca = "Matheus";
-    Contato contatoencontrado = agenda.buscaContato(nomeBusca)
-    }
+    Contato contatoencontrado = agenda.buscaContato(nomeBusca);
 
+    if (contatoencontrado != null) {
+        
+        System.out.println("Encontrar contato: ");
+        System.out.println("Nome: "+ contatoencontrado.getNome());
+        System.out.println("Telefone: " + contatoencontrado.getFone());
+
+    }else{
+        System.out.println("Contato não encontrado");
+    }
+  }
 }
