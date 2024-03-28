@@ -29,6 +29,22 @@ class Pizza{
     }
 }
 
-class pedido{
-    
+class Pedido{
+    private List<Pizza> pizzas;
+
+    public Pedido(){
+        this.pizzas = new ArrayList<>();
+
+    }
+
+    public void adcPizza(Pizza pizza){
+        pizzas.add(pizza);
+
+    }
+
+    public double valTotal(){
+        double total = 0;
+
+        for(pizza)
+    }
 }
