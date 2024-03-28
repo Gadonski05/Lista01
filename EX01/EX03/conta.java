@@ -2,17 +2,17 @@ public class conta{
 
     int conta;
     String nome;
-    Float saldo;
+    Double saldo;
 
-    public conta(int conta, String nome, Float saldo){
+    public void ContaBancaria(int conta, String nome, Double saldoIn){
 
-    int Conta = conta;
-    String Nome = nome;
-    float Saldo = saldo;
+    this.conta = conta;
+    this.nome = nome;
+    this.saldo = saldoIn;
 
     }
 
-    public void deposito(float val){
+    public void deposito(double val){
 
         if(val > 0){
             saldo += val;
@@ -22,7 +22,7 @@ public class conta{
             System.out.println("Operação inválida!!");
         }
     }
-    public void sacar(float val){
+    public void sacar(double val){
         if( val > 0 && val <= saldo){
             saldo -= val;
             System.out.println("Você sacou:" + val);
@@ -34,7 +34,7 @@ public class conta{
 }
     //Parte do controle das contas
      //No caso do retorno dasinformações
-    public float getSaldo(){
+    public double getSaldo(){
             return saldo;
     }
 
