@@ -31,4 +31,11 @@ public class Carro {
             System.out.println("Carro já está parado!!");
         }
     }
+    public void mostraInfo(){
+        System.out.println("Marca: " + this.marca);
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Ano: " + this.ano);
+        System.out.println("Placa: " + this.placa);
+        System.out.println("Velocidade atual: " + this.veloAt);
+    }
 }
