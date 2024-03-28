@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Contato{
 
     private String nome;
@@ -15,5 +18,13 @@ class Contato{
     public int getFone(){
         return fone;
     }
+}
+class Agenda {
+    private List<Contato> contatos;
 
+    public Agenda(){
+        this.contatos = new ArrayList<>();
+    }
+
+    public void adcContato(Contato contato)
 }
