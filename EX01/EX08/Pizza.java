@@ -45,6 +45,9 @@ class Pedido{
     public double valTotal(){
         double total = 0;
 
-        for(pizza)
+        for(Pizza pizza: pizzas){
+            total += pizza.getVal();
+        }
+        return total;
     }
 }
