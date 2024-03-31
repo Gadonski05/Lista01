@@ -1,7 +1,29 @@
 import java.util.Scanner;
 
 public class MainBl {
-   
+
+    static class Livro {
+
+        String nome;
+        String autor;
+        int ano;
+
+        public Livro(String nome, String autor, int ano){
+
+            this.nome = nome;
+            this.autor = autor;
+            this.ano = ano;
+            
+
+        }
+
+        public void info(){
+
+            System.out.println("Nome do livro: " + nome);
+            System.out.println("Autor: " + autor);
+            System.out.println("Ano de publicação: " + ano);
+        }
+
     public static void main(String[] args) {
         
         Biblioteca biblioteca = new Biblioteca();
@@ -23,6 +45,7 @@ public class MainBl {
 
         // Sequencia caso o usuário escolha alguma opção
         switch (opcao) {
+
             case 1:
 
                 System.out.println("Nome do livro: ");
@@ -36,6 +59,7 @@ public class MainBl {
                 scanner.nextLine();
 
                 Livro livro = new Livro(nome, autor, ano);
+                biblioteca.adclivro(livro);
 
                 break;
 
@@ -55,30 +79,7 @@ public class MainBl {
 
                 System.out.println("Erro");
                 
-        }
-        
-        class Livro {
-
-            String nome;
-            String autor;
-            int ano;
-
-            public Livro(String nome, String autor, int ano){
-
-                String nomeLivro;
-                String autorLivro;
-                int anoPublic;
-
-                nome = nomeLivro;
-                autor = autorLivro;
-                ano = anoPublic;
-            }
-            public void info(){
-
-                System.out.println("Nome do livro: " + nome);
-                System.out.println("Autor: " + autor);
-                System.out.println("Ano de publicação: " + ano);
-            }
+          }
         }
     }
 }
