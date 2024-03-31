@@ -22,6 +22,7 @@ public class Biblioteca {
 
             for (Livro livro: biblioteca);
 
+            Biblioteca livro;
             livro.mostralivro();
             System.out.println();
         }
