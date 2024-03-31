@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class mainbl {
+public class MainBl {
    
     public static void main(String[] args) {
         
-        biblioteca biblioteca = new biblioteca();
-        String Scanner = new Scanner(System.in);
+        Biblioteca biblioteca = new Biblioteca();
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println();
 
@@ -18,39 +18,45 @@ public class mainbl {
         System.out.println("3 --- Sair ------------");
         System.out.println("Escolha uma opção: ");
 
-        opcao = Scanner.nextInt();
-        Scanner = Scanner.nextLine();
+        opcao = scanner.nextInt();
+        scanner.nextLine();
 
         // Sequencia caso o usuário escolha alguma opção
         switch (opcao) {
             case 1:
+
                 System.out.println("Nome do livro: ");
-                String nome = Scanner.nextLine();
+                String nome = scanner.nextLine();
 
                 System.out.println("Nome do autor: ");
-                String autor = Scanner.nextLine();
+                String autor = scanner.nextLine();
 
                 System.out.println("Ano de publicação: ");
-                int ano = Scanner.nextInt();
+                int ano = scanner.nextInt();
+                scanner.nextLine();
+
+                Livro livro = new Livro(nome, autor, ano);
 
                 break;
 
             case 2: 
+
             biblioteca.mostralivro();
 
                 break;
 
             case 3: 
+
                 System.out.println("Sair");
 
                 break;
         
             default:
+
                 System.out.println("Erro");
                 
         }
         
-
         class Livro {
 
             String nome;
@@ -68,6 +74,7 @@ public class mainbl {
                 ano = anoPublic;
             }
             public void info(){
+
                 System.out.println("Nome do livro: " + nome);
                 System.out.println("Autor: " + autor);
                 System.out.println("Ano de publicação: " + ano);
