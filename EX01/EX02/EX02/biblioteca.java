@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 
 // Representação da class principal
-public class biblioteca {
+public class Biblioteca {
         
         ArrayList<Livro> biblioteca;
 
         // Corpo da classe da biblioteca
-        public biblioteca(){
+        public Biblioteca(){
             // Inicialização da lista
             biblioteca = new ArrayList<>();
         }
 
-        public void adclivro(Livro){
+        public void adclivro(Livro livro){
 
-            biblioteca.add(Livro);
+            biblioteca.add(livro);
         }
 
         public void mostralivro(){
